@@ -72,7 +72,7 @@ nav a {
 
 nav a:first-child {
   float: left;
-  color: #000000; 
+  color: #000000;
 }
 
 nav a img {
@@ -107,17 +107,30 @@ header h1 {
 
 /*-----------Team-------------*/
 
-.team {
-  text-align: center;
-  margin: 10em 0 3em 0;
-  padding: 0 5%;
-  background-image: url("../img/background_team.png");
+.banner {
+  width: 100%;
+  height: 600px;
+  margin: 0em 0 1em 0;
+  background-image: url("../img/background_header-two.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.team {
+  text-align: center;
+  margin: 2em 0 3em 0;
+  padding: 0 5%;
+  z-index: 100000;
+}
+
 .team h1 {
   width: 50%;
+  margin: 0 auto 30px auto;
+}
+
+.team h3{
+  width: 80%;
   margin: 0 auto 30px auto;
 }
 
@@ -132,12 +145,11 @@ header h1 {
   width: 16%;
   margin: 0 30px;
   color: #2B9DFF;
-
 }
-.person i{
+
+.person i {
   margin-bottom: 10px;
   font-size: 70px;
-  
 }
 
 .person h3 {
@@ -163,7 +175,7 @@ header h1 {
   margin-right: 30px;
 }
 
-.about h1, .icons {
+.about h1, .about h3, .icons {
   margin-left: 50%;
 }
 
@@ -172,9 +184,10 @@ header h1 {
 .callToAction {
   text-align: center;
   padding: 20em 5% 20em 5%;
-  background-image: url("../img/background_calltoaction.png");
+  background-image: url("../img/background_footer.png");
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: cover;
+
   background-position: center;
 }
 
@@ -184,36 +197,35 @@ header h1 {
   vertical-align: middle;
 }
 
-
 /*--------Info------------*/
-.container-info{
+
+.container-info {
   width: 100%;
   display: flex;
   justify-content: center;
   background-color: #F8FBFF;
 }
 
-.container-info .info{
+.container-info .info {
   width: 50%;
   margin: 5% 30px;
   text-align: center;
 }
-.info h3{
+
+.info h3 {
   margin-bottom: 10px;
 }
 
-.info ul{
+.info ul {
   list-style: none;
   display: inline-block;
 }
 
-.info ul li{
-  
+.info ul li {
   font-size: 25px;
   text-align: center;
   float: left;
   margin-left: 20px;
-
 }
 
 /*--------Footer-----------*/
@@ -226,14 +238,13 @@ footer {
 
 footer p, .footerPages {
   display: inline-block;
-  
 }
 
 .footerPages {
   float: right;
 }
 
-.footerPages a{
+.footerPages a {
   text-decoration: none;
   font-weight: 100;
   color: #2B9DFF;
@@ -241,8 +252,8 @@ footer p, .footerPages {
 }
 
 /*-------Responsive--------*/
-@media(max-width:1000px){
 
+@media(max-width:1000px) {
   header {
     height: 1600px;
     min-height: 1600px;
@@ -251,21 +262,17 @@ footer p, .footerPages {
     background-size: contain;
     background-position: bottom right;
   }
-
-  header h1{
+  header h1 {
     width: 100%;
   }
-
   .team {
     margin: 10em 0 3em 0;
     background-image: url("../img/mobile_background_team.png");
     background-position: top;
   }
-
-  .team h1{
+  .team h1 {
     width: 100%;
   }
-
   .about {
     background-image: url("../img/mobile_background_about.png");
     background-size: contain;
@@ -273,61 +280,48 @@ footer p, .footerPages {
     min-height: 900px;
     overflow-y: visible;
   }
-
-
   .about h1 {
     padding-top: 900px;
   }
-
-  .about h1, .icons{
+  .about h1, .icons {
     margin-left: 0;
   }
-
-  .callToAction{
+  .callToAction {
     margin-top: 25em;
     padding: 15em 5% 15em 5%;
     background-size: 70%;
   }
-
   .callToAction h1, .callToAction a {
     margin-bottom: 30px;
   }
-
-  footer{
+  footer {
     text-align: center;
   }
-
-  .footerPages{
+  .footerPages {
     visibility: hidden;
   }
-
-  footer p, .footerPages{
+  footer p, .footerPages {
     display: block;
   }
-
 }
-@media (max-width:600px){
-  header{
+
+@media (max-width:600px) {
+  header {
     height: 1300px;
     min-height: 1300px;
   }
-
-  header h1{
+  header h1 {
     margin: 1em 0 0 0;
   }
-
-  .about h1{
+  .about h1 {
     padding-top: 800px;
   }
-
-  .members{
+  .members {
     flex-direction: column;
     width: 80%;
   }
-
-  .person{
+  .person {
     width: 100%;
     margin-top: 30px;
-
   }
 }
